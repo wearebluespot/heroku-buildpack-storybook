@@ -7,4 +7,6 @@ BP_DIR=`cd $(dirname $0); cd ..; pwd`
 
 cd $BUILD_DIR
 
+export PATH="$BUILD_DIR/.heroku/node/bin:$BUILD_DIR/.heroku/yarn/bin":$PATH
+
 yarn build-storybook
